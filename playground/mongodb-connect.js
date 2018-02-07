@@ -2,11 +2,6 @@
 
 const {MongoClient, ObjectID} = require('mongodb');
 
-
-var obj = new ObjectID();
-
-console.log(obj);
-
 MongoClient.connect('mongodb://localhost:27017', (err, client) => {
   if (err) {
     return console.log('Unable ot connect to MongoDB server');
